@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #ffffff;
+    background: linear-gradient(to left, #9d33f3, #8d33f3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;   
+    padding-top: 50px;
+}
+p{
+    font-size: 17px;
+}
+.myContainer{
+    width: 100%;
+    height: 100%;
+}
+.myCard {
+    width: 60vw;
+    margin: 0 auto;
+    /* margin-top: 50px; không dùng margin-top chỗ này
+    mà dùng padding-top ở thẻ body hoặc myContainer để ko bị kéo thanh scroll
+    */
+  
+    padding: 35px;
+    border-radius: 40px;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    border: 1px solid white;
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.2);
+}
+
+.card-left,
+.card-right {
+    width: 50%;
+}
+
+.myInput {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: .5s;
+    font-size: 16.5px;
+    outline: none;
+    color: white;
+    box-shadow: 5px 5px 30px rgb(0 0 0 / 20%);
+}
+.myInput::placeholder{
+    color: white;
+}
+.myInput:hover{
+    border-color: #9d33f3;
+}
+.btn-boost{
+    margin-top: 30px;
+    border: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    color: #ffffff;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    font-family: "br_omega", sans-serif;
+    border: 1px solid rgb(235, 233, 233);
+    cursor: pointer;
+    transition: 0.7s;
+}
+.btn-boost:hover{
+    border: 1px solid #8d33f3;
+}
+@media screen and (max-width: 991.98px) {
+    .card-left,
+    .card-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .card {
+        padding: 0px;
+    }
+    .myCard{
+        width: 95vw;
+    }
+    .desc-MBI{
+        font-size: 14px;
+    }
+}
