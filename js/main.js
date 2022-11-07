@@ -25,6 +25,8 @@ domID('cal').onclick = function () {
         // hàm toFixed làm tròn số sau dấu phẩy
         const bmi = (weight / (height * height /10000)).toFixed(2);
         // chiều cao đơn vị là mét đổi sang cm chia cho 100, 2 cái height là 10000
+        domID('output').style.display='none';
+        domID('outputImg').style.display='none';
         if (bmi < 18.5) {
             output.innerHTML = 'Gầy : ' + bmi;
             outputImg.src = './img/body-1.png';
@@ -44,6 +46,9 @@ domID('cal').onclick = function () {
             output.innerHTML = 'Béo phì độ 3 : ' + bmi;
             outputImg.src = './img/body-6.png';
         }
-
+        setTimeout(function(){
+            domID('output').style.display='block';
+            domID('outputImg').style.display='block';
+        },500)
     }
 }
